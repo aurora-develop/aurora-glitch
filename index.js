@@ -8,8 +8,8 @@ const axios = require('axios');
 app.use(
     "/",
     createProxyMiddleware({
-        target: "http://127.0.0.1:8080/", // The request address that needs cross-domain processing
-        changeOrigin: false, // Default is false, whether to change the original host header to the target URL
+        target: "http://127.0.0.1:8080/", 
+        changeOrigin: false, 
         ws: true,
         logLevel: "error"
     })
